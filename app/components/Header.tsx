@@ -3,7 +3,7 @@ import Link from 'next/link';
 import LogoutButton from './LogoutButton';
 
 const Header = () => {
-  const session = false;
+  const session = true;
 
   if (session) {
     return (
@@ -18,7 +18,7 @@ const Header = () => {
           />
           <div>
             <p className="text-blue-400">Logged in as:</p>
-            <p className="font-bold text-lg">Users Name Here</p>
+            <p className="font-bold text-lg">Rakib</p>
           </div>
         </div>
         <LogoutButton />
