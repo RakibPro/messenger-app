@@ -1,11 +1,14 @@
 import { Inter } from 'next/font/google';
+import ChatInput from './components/ChatInput';
+import MessageList from './components/MessageList';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <main>
-      <h1>Welcome to Messenger</h1>
+      <MessageList />
+      <ChatInput />
     </main>
   );
 }

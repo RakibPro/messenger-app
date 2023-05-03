@@ -6,6 +6,7 @@
 .pnp.js
 .vscode
 .yarn
+information.txt
 
 # testing
 /coverage
