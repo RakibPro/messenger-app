@@ -2,6 +2,8 @@ import { Inter } from 'next/font/google';
 import ChatInput from './components/ChatInput';
 import MessageList from './components/MessageList';
 import { Message } from '@/typing';
+import { getServerSession } from 'next-auth/next';
+import { Providers } from './providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -9,14 +11,16 @@ export default async function Home() {
   const data = await fetch(`${process.env.VERCEL_URL}/api/getMessages`).then(
     (res) => res.json()
   );
-
   const messages: Message[] = data.messages;
 
-  console.log(data);
+  const session = await getServerSession();
+
   return (
-    <main>
-      <MessageList initialMessages={messages} />
-      <ChatInput />
-    </main>
+    <Providers session={session}>
+      <main>
+        <MessageList initialMessages={messages} />
+        <ChatInput session={session} />
+      </main>
+    </Providers>
   );
 }
