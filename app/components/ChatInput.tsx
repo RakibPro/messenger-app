@@ -11,17 +11,17 @@ type Props = {
   session: Awaited<ReturnType<typeof getServerSession>>;
 };
 
-const ChatInput = (session: Props) => {
+const ChatInput = ({ session }: Props) => {
   const [input, setInput] = useState('');
   const { data: messages, error, mutate } = useSWR('/api/getMessages', fetcher);
-
-  console.log(messages);
 
   const addMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!input) return;
+    if (!input || !session) return;
+
     const messageToSend = input;
+
     setInput('');
 
     const id = uuid();
@@ -30,10 +30,9 @@ const ChatInput = (session: Props) => {
       id,
       message: messageToSend,
       create_at: Date.now(),
-      userName: 'Rakib',
-      profilePic:
-        'https://cdn.fansshare.com/photo/cutegirlswallpaper/cute-babies-pictures-for-facebook-profile-for-facebook-profile-pic-1211957711.jpg',
-      email: 'tryforthis2020@gmail.com',
+      userName: session?.user?.name!,
+      profilePic: session?.user?.image!,
+      email: session?.user?.email!,
     };
 
     const uploadMessageToUpstash = async () => {

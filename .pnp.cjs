@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.16.3"],\
             ["@types/react", "npm:18.2.0"],\
             ["@types/react-dom", "npm:18.2.1"],\
+            ["@types/react-timeago", "npm:4.1.3"],\
             ["@types/uuid", "npm:9.0.1"],\
             ["autoprefixer", "virtual:e47e004dcd2c9f5ff1c3b70ee4ef1fcb53cc48fc22ededb4dcafcefa8b609a95f33eb6a22c5152baa0e610ba40c5acffb4469c029c433c0f94a7c4557d21d395#npm:10.4.14"],\
             ["encoding", "npm:0.1.13"],\
@@ -44,6 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pusher-js", "npm:8.0.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:e47e004dcd2c9f5ff1c3b70ee4ef1fcb53cc48fc22ededb4dcafcefa8b609a95f33eb6a22c5152baa0e610ba40c5acffb4469c029c433c0f94a7c4557d21d395#npm:18.2.0"],\
+            ["react-timeago", "virtual:e47e004dcd2c9f5ff1c3b70ee4ef1fcb53cc48fc22ededb4dcafcefa8b609a95f33eb6a22c5152baa0e610ba40c5acffb4469c029c433c0f94a7c4557d21d395#npm:7.1.0"],\
             ["swr", "virtual:e47e004dcd2c9f5ff1c3b70ee4ef1fcb53cc48fc22ededb4dcafcefa8b609a95f33eb6a22c5152baa0e610ba40c5acffb4469c029c433c0f94a7c4557d21d395#npm:2.1.5"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=85af82"],\
@@ -532,6 +534,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.2.1-4d56bce9b4-4e607a9d08.zip/node_modules/@types/react-dom/",\
           "packageDependencies": [\
             ["@types/react-dom", "npm:18.2.1"],\
+            ["@types/react", "npm:18.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react-timeago", [\
+        ["npm:4.1.3", {\
+          "packageLocation": "./.yarn/cache/@types-react-timeago-npm-4.1.3-ecade2088a-2020f48a9a.zip/node_modules/@types/react-timeago/",\
+          "packageDependencies": [\
+            ["@types/react-timeago", "npm:4.1.3"],\
             ["@types/react", "npm:18.2.0"]\
           ],\
           "linkType": "HARD"\
@@ -3383,6 +3395,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.16.3"],\
             ["@types/react", "npm:18.2.0"],\
             ["@types/react-dom", "npm:18.2.1"],\
+            ["@types/react-timeago", "npm:4.1.3"],\
             ["@types/uuid", "npm:9.0.1"],\
             ["autoprefixer", "virtual:e47e004dcd2c9f5ff1c3b70ee4ef1fcb53cc48fc22ededb4dcafcefa8b609a95f33eb6a22c5152baa0e610ba40c5acffb4469c029c433c0f94a7c4557d21d395#npm:10.4.14"],\
             ["encoding", "npm:0.1.13"],\
@@ -3396,6 +3409,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pusher-js", "npm:8.0.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:e47e004dcd2c9f5ff1c3b70ee4ef1fcb53cc48fc22ededb4dcafcefa8b609a95f33eb6a22c5152baa0e610ba40c5acffb4469c029c433c0f94a7c4557d21d395#npm:18.2.0"],\
+            ["react-timeago", "virtual:e47e004dcd2c9f5ff1c3b70ee4ef1fcb53cc48fc22ededb4dcafcefa8b609a95f33eb6a22c5152baa0e610ba40c5acffb4469c029c433c0f94a7c4557d21d395#npm:7.1.0"],\
             ["swr", "virtual:e47e004dcd2c9f5ff1c3b70ee4ef1fcb53cc48fc22ededb4dcafcefa8b609a95f33eb6a22c5152baa0e610ba40c5acffb4469c029c433c0f94a7c4557d21d395#npm:2.1.5"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=85af82"],\
@@ -4481,6 +4495,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-f7a19ac349.zip/node_modules/react-is/",\
           "packageDependencies": [\
             ["react-is", "npm:16.13.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-timeago", [\
+        ["npm:7.1.0", {\
+          "packageLocation": "./.yarn/cache/react-timeago-npm-7.1.0-51b85adfd9-cfc3959701.zip/node_modules/react-timeago/",\
+          "packageDependencies": [\
+            ["react-timeago", "npm:7.1.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:e47e004dcd2c9f5ff1c3b70ee4ef1fcb53cc48fc22ededb4dcafcefa8b609a95f33eb6a22c5152baa0e610ba40c5acffb4469c029c433c0f94a7c4557d21d395#npm:7.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-timeago-virtual-1d0f7b9070/0/cache/react-timeago-npm-7.1.0-51b85adfd9-cfc3959701.zip/node_modules/react-timeago/",\
+          "packageDependencies": [\
+            ["react-timeago", "virtual:e47e004dcd2c9f5ff1c3b70ee4ef1fcb53cc48fc22ededb4dcafcefa8b609a95f33eb6a22c5152baa0e610ba40c5acffb4469c029c433c0f94a7c4557d21d395#npm:7.1.0"],\
+            ["@types/react", "npm:18.2.0"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\

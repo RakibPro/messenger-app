@@ -24,6 +24,8 @@ const MessageList = ({ initialMessages }: Props) => {
       // When you send the message no need to update the cache
       if (messages?.find((message) => message.id === data.id)) return;
 
+      console.log('=== New Message from pusher:', data.message, '===');
+
       if (!messages) {
         mutate(fetcher);
       } else {
