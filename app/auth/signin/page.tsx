@@ -16,7 +16,7 @@ const SignInPage = async () => {
           className="rounded-full mx-2 object-contain"
           height={700}
           width={700}
-          src="https://links.papareact.com/161"
+          src="https://i.ibb.co/Bfz2K1m/messenger-icon.png"
           alt="Profile Picture"
         />
       </div>

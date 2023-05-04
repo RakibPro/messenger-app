@@ -32,8 +32,8 @@ const Header = async () => {
       <div className="flex flex-col items-center space-y-5">
         <div className="flex space-x-2 items-center">
           <Image
-            src="https://links.papareact.com/jne"
-            height={10}
+            src="https://i.ibb.co/Kx3gsLP/logo-Meta.png"
+            height={50}
             width={50}
             alt="Logo"
           />
